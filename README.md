@@ -1,6 +1,8 @@
 # HeavySkill
 
-Implementation of **"HeavySkill: Heavy Thinking as the Inner Skill in Agentic Harness"** ([arXiv:2605.02396v1](https://arxiv.org/abs/2605.02396)).
+Implementation of **"HeavySkill: Heavy Thinking as the Inner Skill in Agentic Harness"** ([arXiv:2605.02396v1](https://arxiv.org/abs/2605.02396) · [authors' original repository](https://github.com/wjn1996/HeavySkill)).
+
+> This repository is an independent packaging of the paper's skill as an installable **Claude Code plugin**. For the canonical reference implementation, evaluation code, and any official artifacts from the authors, see [wjn1996/HeavySkill](https://github.com/wjn1996/HeavySkill).
 
 HeavySkill is a training-free reasoning amplification technique. Faced with a complex problem, an agent equipped with this skill:
 
@@ -209,6 +211,8 @@ MIT — see [LICENSE](./LICENSE).
   archivePrefix = {arXiv}
 }
 ```
+
+Authors' official repository: [github.com/wjn1996/HeavySkill](https://github.com/wjn1996/HeavySkill).
 
 ## Dashboard
 
