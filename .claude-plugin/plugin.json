@@ -1,0 +1,15 @@
+{
+  "name": "heavyskill",
+  "version": "0.1.0",
+  "description": "Heavy Thinking as the Inner Skill in Agentic Harness — spawns K independent parallel reasoning agents then performs critical sequential deliberation. Implementation of arXiv:2605.02396v1.",
+  "homepage": "https://arxiv.org/abs/2605.02396",
+  "license": "MIT",
+  "keywords": [
+    "reasoning",
+    "heavy-thinking",
+    "parallel-reasoning",
+    "deliberation",
+    "skill",
+    "agentic-harness"
+  ]
+}
