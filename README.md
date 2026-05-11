@@ -101,19 +101,19 @@ A majority-vote scheme would have returned the wrong answer. Deliberation catche
 
 ### Example 2 — Three radically different paths converge
 
-> **Problem.** Compute $\displaystyle \sum_{k=1}^{\infty} \frac{1}{k^2 \, 2^k}$ in closed form.
+> **Problem.** Compute $\displaystyle \sum_{k=1}^{\infty} \frac{1}{k^2 \\, 2^k}$ in closed form.
 
 **Stage 1 — three parallel trajectories.**
 
 | | Approach | Steps |
 |---|---|---|
-| **Thinker #1** | Power series. Starts from $-\ln(1-x) = \sum_{k \ge 1} x^k / k$, divides by $x$, integrates from 0 to $1/2$. | $\int_0^{1/2} \frac{-\ln(1-x)}{x}\,dx$ |
-| **Thinker #2** | Integral representation. Writes $1/k^2 = \int_0^1 \int_0^1 (xy)^{k-1}\,dx\,dy$, swaps sum and integrals, evaluates. | A double integral over $[0,1]^2$ |
+| **Thinker #1** | Power series. Starts from $-\ln(1-x) = \sum_{k \ge 1} x^k / k$, divides by $x$, integrates from 0 to $1/2$. | $\int_0^{1/2} \frac{-\ln(1-x)}{x}\\,dx$ |
+| **Thinker #2** | Integral representation. Writes $1/k^2 = \int_0^1 \int_0^1 (xy)^{k-1}\\,dx\\,dy$, swaps sum and integrals, evaluates. | A double integral over $[0,1]^2$ |
 | **Thinker #3** | Special-function identity. Recognises the sum as $\mathrm{Li}_2(1/2)$ and invokes the known identity. | Direct closed form |
 
 **Stage 2 — deliberation.** Three completely different machines (real analysis, double integrals, polylogarithm identities) yield the *same* closed form. The deliberator notes that triple cross-validation across independent frameworks is far stronger evidence than three majority-voting trials, and accepts the answer with high confidence.
 
-> **Final answer.** $\displaystyle \sum_{k=1}^{\infty} \frac{1}{k^2 \, 2^k} = \mathrm{Li}_2\!\left(\tfrac{1}{2}\right) = \frac{\pi^2}{12} - \frac{(\ln 2)^2}{2}.$
+> **Final answer.** $\displaystyle \sum_{k=1}^{\infty} \frac{1}{k^2 \\, 2^k} = \mathrm{Li}_2\\!\left(\tfrac{1}{2}\right) = \frac{\pi^2}{12} - \frac{(\ln 2)^2}{2}.$
 
 This is the textbook case where HeavySkill's `HM@K` approaches the `P@K` upper bound: any one of the three paths suffices, and their agreement makes the answer essentially certain.
 
