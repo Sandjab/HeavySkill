@@ -209,3 +209,12 @@ MIT — see [LICENSE](./LICENSE).
   archivePrefix = {arXiv}
 }
 ```
+
+## Dashboard
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/dashboard-dark.svg">
+  <img src="assets/dashboard-light.svg" alt="HeavySkill repository dashboard">
+</picture>
+
+*Rendered every 6 hours by [Cartouche](https://github.com/Sandjab/cartouche) — vellum-davinci theme.*
