@@ -67,7 +67,7 @@ Recommended sampling parameters from the paper: `temperature=1.0`, `top_p=0.95`,
 
 Once installed, the skill auto-activates on problems matching its trigger description. You can also invoke it explicitly:
 
-> Activate heavy-thinking and solve: *Find the number of ordered pairs $(a,b)$ of integers such that $|a + bi| \le 5$ and $a^2 + b^2$ is prime.*
+> Activate heavy-thinking and solve: Find the number of ordered pairs $(a,b)$ of integers such that $|a + bi| \le 5$ and $a^2 + b^2$ is prime.
 
 Behind the scenes:
 
@@ -81,7 +81,7 @@ Three scenarios that illustrate why **deliberation outperforms voting** — and 
 
 ### Example 1 — The minority is right (consensus is wrong)
 
-> *Determine all real numbers $\alpha$ such that, for every positive integer $n$, the sum $\lfloor \alpha \rfloor + \lfloor 2\alpha \rfloor + \cdots + \lfloor n\alpha \rfloor$ is divisible by $n$.*
+> **Problem.** Determine all real numbers $\alpha$ such that, for every positive integer $n$, the sum $\lfloor \alpha \rfloor + \lfloor 2\alpha \rfloor + \cdots + \lfloor n\alpha \rfloor$ is divisible by $n$.
 
 **Stage 1 — three parallel trajectories.**
 
@@ -101,7 +101,7 @@ A majority-vote scheme would have returned the wrong answer. Deliberation catche
 
 ### Example 2 — Three radically different paths converge
 
-> *Compute $\displaystyle \sum_{k=1}^{\infty} \frac{1}{k^2 \, 2^k}$ in closed form.*
+> **Problem.** Compute $\displaystyle \sum_{k=1}^{\infty} \frac{1}{k^2 \, 2^k}$ in closed form.
 
 **Stage 1 — three parallel trajectories.**
 
@@ -109,11 +109,11 @@ A majority-vote scheme would have returned the wrong answer. Deliberation catche
 |---|---|---|
 | **Thinker #1** | Power series. Starts from $-\ln(1-x) = \sum_{k \ge 1} x^k / k$, divides by $x$, integrates from 0 to $1/2$. | $\int_0^{1/2} \frac{-\ln(1-x)}{x}\,dx$ |
 | **Thinker #2** | Integral representation. Writes $1/k^2 = \int_0^1 \int_0^1 (xy)^{k-1}\,dx\,dy$, swaps sum and integrals, evaluates. | A double integral over $[0,1]^2$ |
-| **Thinker #3** | Special-function identity. Recognises the sum as $\operatorname{Li}_2(1/2)$ and invokes the known identity. | Direct closed form |
+| **Thinker #3** | Special-function identity. Recognises the sum as $\mathrm{Li}_2(1/2)$ and invokes the known identity. | Direct closed form |
 
 **Stage 2 — deliberation.** Three completely different machines (real analysis, double integrals, polylogarithm identities) yield the *same* closed form. The deliberator notes that triple cross-validation across independent frameworks is far stronger evidence than three majority-voting trials, and accepts the answer with high confidence.
 
-> **Final answer.** $\displaystyle \sum_{k=1}^{\infty} \frac{1}{k^2 \, 2^k} = \operatorname{Li}_2\!\left(\tfrac{1}{2}\right) = \frac{\pi^2}{12} - \frac{(\ln 2)^2}{2}.$
+> **Final answer.** $\displaystyle \sum_{k=1}^{\infty} \frac{1}{k^2 \, 2^k} = \mathrm{Li}_2\!\left(\tfrac{1}{2}\right) = \frac{\pi^2}{12} - \frac{(\ln 2)^2}{2}.$
 
 This is the textbook case where HeavySkill's `HM@K` approaches the `P@K` upper bound: any one of the three paths suffices, and their agreement makes the answer essentially certain.
 
@@ -121,7 +121,7 @@ This is the textbook case where HeavySkill's `HM@K` approaches the `P@K` upper b
 
 ### Example 3 — All three are wrong, deliberation re-derives
 
-> *I tell you "I have two children. At least one is a boy born on a Tuesday." Assuming each child is independently a boy or girl with probability $1/2$ and each day of the week with probability $1/7$, what is the probability that both children are boys?*
+> **Problem.** I tell you "I have two children. At least one is a boy born on a Tuesday." Assuming each child is independently a boy or girl with probability $1/2$ and each day of the week with probability $1/7$, what is the probability that both children are boys?
 
 **Stage 1 — three parallel trajectories.**
 
