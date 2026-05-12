@@ -35,13 +35,13 @@ The `SKILL.md` file is the entire implementation. Everything else is packaging.
 From inside Claude Code:
 
 ```
-/plugin install https://github.com/<owner>/HeavySkill
+/plugin install https://github.com/Sandjab/HeavySkill
 ```
 
 Or clone the repo and install locally:
 
 ```bash
-git clone https://github.com/<owner>/HeavySkill ~/.claude/plugins/heavyskill
+git clone https://github.com/Sandjab/HeavySkill ~/.claude/plugins/heavyskill
 ```
 
 Restart Claude Code. The `heavy-thinking` skill becomes available globally and auto-activates on problems matching the description in the skill frontmatter.
